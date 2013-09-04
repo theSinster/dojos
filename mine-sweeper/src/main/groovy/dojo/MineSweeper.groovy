@@ -1,4 +1,4 @@
-package com.draeger.dojo
+package dojo
 
 class MineSweeper {
 

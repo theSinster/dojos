@@ -1,10 +1,10 @@
-package com.draeger.dojo;
+package dojo
 
 import org.junit.Before
 import org.junit.Test
 
-import static org.hamcrest.MatcherAssert.assertThat
 import static org.hamcrest.CoreMatchers.is
+import static org.hamcrest.MatcherAssert.assertThat
 
 public class MineSweeperTest {
 
