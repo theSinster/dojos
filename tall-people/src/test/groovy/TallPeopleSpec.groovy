@@ -12,10 +12,10 @@ class TallPeopleSpec extends Specification {
     @Unroll
     def "return the tasks which the business man chooses to execute"() {
         expect:
-        tallPeople.getPeople(poeple as String[]) == result
+        tallPeople.getPeople(people as String[]) == result
 
         where:
-        poeple                | result
+        people                | result
         ["9 2 3", "4 8 7"]    | [4, 7]
         ["1 2", "4 5", "3 6"] | [4, 4]
         ["1 1", "1 1"]        | [1, 1]
