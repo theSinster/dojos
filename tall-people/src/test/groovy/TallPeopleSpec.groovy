@@ -10,7 +10,7 @@ class TallPeopleSpec extends Specification {
     }
 
     @Unroll
-    def "return the tasks which the business man chooses to execute"() {
+    def "return the tallest-of-the-shortest and the shortest-of-the-tallest"() {
         expect:
         tallPeople.getPeople(people as String[]) == result
 
