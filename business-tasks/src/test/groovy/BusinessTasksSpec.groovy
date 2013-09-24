@@ -9,16 +9,6 @@ class BusinessTasksSpec extends Specification {
         businessTasks = new BusinessTasks()
     }
 
-    def "the index is calculated correctly"() {
-        expect:
-        businessTasks.calculateListIndex(listSize, n) == result
-
-        where:
-        listSize | n    | result
-        4        | 2    | 1
-        2        | 1000 | 1
-    }
-
     @Unroll
     def "return the tasks which the business man chooses to execute"() {
         expect:
